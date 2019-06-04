@@ -1,0 +1,32 @@
+.form{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    &__fieldset{
+        border: 0;
+        margin-top: 4rem;
+        flex: 0 0 48%;
+        overflow: hidden;
+        @include media (tab-port){
+            flex: 0 0 100%;
+        }
+        &-text,input[type=text],input[type=email]{
+            border: none;
+            border-bottom: 2px solid map-get($colors,white);
+            background: map-get($colors,purple);
+            color: map-get($colors,white);
+            font-size: 1.6rem;
+            padding-bottom: 2.5rem;
+            width: 100%;
+            outline: 0;
+            &::placeholder{
+                font-size: 1.6rem;
+                color: map-get($colors,white);  
+            }
+            &:focus{
+                outline: 0;
+                border-bottom: 2px solid map-get($colors,red);
+            }
+        }
+    }
+}

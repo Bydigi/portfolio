@@ -1,0 +1,40 @@
+.home{
+    background-size: cover;
+    background-position: top;
+    height: 100vh;
+    background-image: linear-gradient(
+        to bottom,
+        rgba( map-get($colors,light-purple) , 0.3),
+        rgba( map-get($colors,red), 0.4)),
+    url(../images/bg.jpg);
+    position: relative;
+    &__welcome-box{
+        width:35rem;
+        @include centered();
+    }
+    &__logo{
+        width: 80%;
+        @include media(tab-land){
+            width: 70%;
+            margin-left: 5rem;
+        }
+    }
+    &__autotype{
+        font-size: 1.8rem;
+        color: map-get($colors, white);
+        font-family: map-get($typography, merriweather);
+        text-align: center;
+        margin-top: 2rem;
+        &::after{
+            opacity: 1;
+            content: '|';
+            animation: blink .7s infinite;
+            color: map-get($colors, white );
+            font-size: 2rem;
+        }
+        &--cursor{
+            opacity: 1;
+            animation: blink 0.7s infinite;
+        }
+    }
+}

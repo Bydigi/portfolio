@@ -1,0 +1,22 @@
+{
+  "name": "diyar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "prod": "parcel build src/index.html -d public_html --public-url ./"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.6.0",
+    "parcel-bundler": "^1.12.3",
+    "sass": "^1.20.3"
+  },
+  "dependencies": {
+    "smooth-scroll": "^16.0.3",
+    "typed.js": "^2.0.10"
+  }
+}

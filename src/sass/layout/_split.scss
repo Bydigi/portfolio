@@ -1,0 +1,150 @@
+.designer, .developer{
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    height: 93vh;
+    display: flex;
+    @include media(tab-land){
+        background-image: none;
+        height: auto;
+    }
+}
+#designer{
+    background-image: url(../images/bg-designer.jpg);
+    justify-content: flex-end;
+}
+#developer{
+    background-image: url(../images/bg-developer.jpg);
+    justify-content: flex-start;
+}
+.split{
+    height: 93vh;
+    width: 50%;
+    position: relative;
+    @include media (tab-land){
+        width: 100vw;
+        height: auto;
+        padding-top: 35rem;
+        padding-bottom:35rem;
+    }
+    &--right{
+        background-color: map-get($colors, transparent-white );
+        @include media (tab-land){
+            background-color: map-get($colors,white);
+        }
+    }
+    &--left{
+        background-color: map-get($colors, transparent-purple );
+        @include media (tab-land){
+            background-color: map-get($colors,light-purple);
+        }
+    }
+    &__box{
+        @include centered();
+        width: 80%;
+        @include media(big-desktop){
+            width: 60%;
+        }
+        @include media(tab-land){
+            width: 60%;
+        }
+        @include media(phone){
+            width: 85%;
+        }
+    }
+    &__title{
+        font-family: map-get($typography, futura);
+        font-size: 5.5rem;
+        text-transform: uppercase;
+        color: map-get($colors, red);
+        margin-bottom: 3rem;
+        @include media(tab-land){
+            font-size: 6rem;
+        }
+        @include media(tab-port){
+            font-size: 6rem; 
+        }
+        @include media(big-desktop){
+            font-size: 7rem;
+        }
+        @include media (phone){
+            font-size: 4rem;
+        }
+        &::after{
+            content: '';
+            background-color: map-get($colors,red);
+            height: .5rem;
+            width: 15%;
+            position: absolute;
+            top: 7rem;
+            left: .3rem;
+            @include media(tab-land){
+                top: 8rem;
+            }
+            @include media(tab-port){
+                top: 8rem;
+            }
+            @include media(big-desktop){
+                top: 9rem;
+            }
+            @include media (phone){
+                top: 6rem;
+            }
+        }
+    }
+}
+
+.quote{
+    font-style: italic;
+    font-family: map-get($typography, merriweather );
+    font-size: 2rem;
+    &--designer{
+        color: map-get($colors, purple);
+    }
+    &--developer{
+        color: map-get($colors, white);
+    }
+}
+.cite{
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    &--designer{
+        color: map-get($colors,purple);
+    }
+    &--developer{
+        color: map-get($colors,white);
+    }
+}
+.smallcaps{
+    font-family: map-get($typography,proxima-nova-smallcaps);
+    font-size: 2rem;
+    display: inline;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-feature-settings: "smcp" on;
+    font-style: normal;
+    &--designer{
+        color: map-get($colors,purple);
+    }
+    &--developer{
+        color: map-get($colors,white);
+    }
+}
+.paragraph{
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    max-width: 55rem;
+    margin-top: 2rem;
+    @include media(big-desktop){
+        font-size: 2.25rem;
+        line-height: 3rem;
+    }
+    &--designer{
+        color: map-get($colors, dark-grey);
+    }
+    &--developer{
+        color: map-get($colors, light-grey);
+    }
+}

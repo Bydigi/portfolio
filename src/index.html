@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Diyar Polat - Front End Developer - San Francisco</title>
+    <meta name="description" content="Personal portofolio Website">
+</head>
+<body>
+    <section class="home" id="home">
+        <header class="header">
+            <nav class="header__navbar">
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-link"><a href="#home">Home</a></li>
+                    <li class="header__navbar-link"><a href="#about">About</a></li>
+                    <li class="header__navbar-link"><a href="#designer">Designer</a></li>
+                    <li class="header__navbar-link"><a href="#developer">Developer</a></li>
+                    <li class="header__navbar-link"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="home__welcome-box">
+            <img src="./images/logo.svg" alt="Diyar Polat - Logo" class="home__logo">
+            <h3 class="home__autotype"></h3>
+        </div>
+        
+    </section>
+
+    <section class="about" id="about">
+        <div class="row">
+            <div class="col-1-of-2">
+                <img src="./images/profile.jpg" alt="profile-pic" class="about__profile-pic">
+            </div>
+            <div class="col-1-of-2">
+                <div class="biography">
+                    <h3 class="biography__title">Who am I?</h3>
+                    <p class="biography__intro">Former Computer Science College Attendant and Self Taught UX/UI Designer.</p>
+                    <div class="biography__body">
+                        <span class="biography__line"></span>
+                        <div class="biography__text">
+                            <p class="biography__paragraph"><span class="biography__text--smallcaps">A front end developer</span> who has understanding of back end development on the side. Ever since I created my first website at the age of 17, I’ve always been inquisitive about web and its rapidly evolving technologies.</p>
+                            <p class="biography__paragraph">I went on to study Computer Science because I loved the idea of combining pieces together and making something of out of that for people to interact with.</p>
+                            <p class="biography__paragraph">I'm passionate about the whole web industry, and I feel exited about working with a team where I can learn and contribute to the ideas. I think that we grow and develop ourselves as professionals when we are outside of our comfort zone. Currently, I am diving into Node.js and React.js, and I am looking forward to become a Full Stack Developer by the end of 2020.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="designer" id="designer">
+        <div class="split split--right">
+            <div class="split__box">
+                <h1 class="split__title">designer</h1>
+                <q class="quote quote--designer">Good design is obvious. Great design is transparent.</q>
+                <cite class="cite cite--designer">Joe Sparano</cite>
+                <p class="paragraph paragraph--designer">
+                    <span class="smallcaps smallcaps--designer">I'm a multi-disciplinary individual</span> who can see things in different perspectives. 
+                    This approach allows me to plan like an engineer, create like an artist and think like a customer. 
+                    I am constantly learning new technologies, trends, and skills to keep myself up to date.
+                </p>
+                <p class="paragraph paragraph--designer">
+                    To me, design really isn't just how it looks; An effective design will have the balance between the visual details and the usefulness it provides to the end user.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="developer" id="developer">
+        <div class="split split--left">
+            <div class="split__box">
+                <h1 class="split__title">developer</h1>
+                <q class="quote quote--developer">Any fool can write code that a computer can understand. Good programmers write code that humans can understand.</q>
+                <cite class="cite cite--developer">Martin Fowler</cite>
+                <p class="paragraph paragraph--developer">
+                    <span class="smallcaps smallcaps--developer">I follow component based approach</span> as it allows me to write cleaner, and reusable blocks of codes throughout my project. Great products should not be defined by design alone, 
+                    but also by functionality and great user experience.
+                </p>
+                <p class="paragraph paragraph--developer">
+                    Code shouldn't only work, it should be easy to maintain, easy to scale, and fun to work with. I try my best to organize file and folder
+                    structures, and I have Object Oriented mindset. 
+                    Developers need to strive for clean, elegant and efficient code to assure long-term sustainability and keep software's maintainability.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="row">
+            <h2 class="contact__title">Say<span class="contact__span"> hi!</span></h2>
+            <form action="contact.php" class="form" method="POST">
+                <fieldset class="form__fieldset">
+                    <input class="form__fieldset-name" type="text" name="name" placeholder="Your Name" onfocus="this.placeholder=''" onblur="this.placeholder='Your Name'" required="required">
+                </fieldset>
+                <fieldset class="form__fieldset">
+					<input class="form__fieldset-email" type="email" name="email" placeholder="Email" onfocus="this.placeholder=''" onblur="this.placeholder='Email'" required="required">
+				</fieldset>
+				<fieldset class="form__fieldset">
+					<textarea class="form__fieldset-text" name="message" placeholder="Your Message" onfocus="this.placeholder=''" onblur="this.placeholder='Your Message'" required="required"></textarea>
+				</fieldset>
+				<fieldset class="form__fieldset">
+					<button type="submit" name="submit" class="btn btn--submit">Submit</button>
+                </fieldset>
+            </form>
+        </div>
+    </footer>
+    <script src= "index.js"></script>
+
+</body>
+</html>
